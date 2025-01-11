@@ -1,0 +1,5 @@
+app_loc: /app
+component: backend
+app_user: expense
+backend_logfile: /etc/rsyslog.d/{{component_name}}.conf
+rsyslog_config_needed: true

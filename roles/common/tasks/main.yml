@@ -1,0 +1,29 @@
+- name: set sudo prompt
+  ansible.builtin.shell: set-prompt {{component}}
+
+## added custom rsyslog configuration
+#- name: Rsyslog Configuration
+#  ansible.builtin.import_role:
+#    name: rsyslog
+#  when: rsyslog_config_needed | bool and not only_deployment | bool
+#
+## added for newrelic to connect with frontend
+#- name: Import newrelic commonly
+#  ansible.builtin.import_role:
+#    name: newrelic
+#    tasks_from: nginx
+#
+#- name: Import elastic search
+#  ansible.builtin.import_role:
+#    name: elk
+#
+#- name: Import logstash commonly
+#  ansible.builtin.import_role:
+#    name: logstash
+#
+#- name: Import rsyslog commonly
+#  ansible.builtin.import_role:
+#    name: rsyslog
+
+
+
