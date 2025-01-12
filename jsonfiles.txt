@@ -2,3 +2,6 @@ sample.json
 demo.json
 demo1.json
 
+join all three json files into one json file
+
+* loop all json files
