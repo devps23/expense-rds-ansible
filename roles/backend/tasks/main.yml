@@ -57,7 +57,7 @@
 #    target: /app/schema/backend.sql
 
 - name: load schema
-  ansible.builtin.shell: mysql -h  {{RDS_DB_HOST}} -u{{ login_user }} -p{{ login_password }} < /app/schema/backend.sql
+  ansible.builtin.shell: mysql -h  {{RDS_DB_HOST}} -u{{ rds_username }} -p{{ rds_password }} < /app/schema/backend.sql
 
 - name: Reload daemon
   ansible.builtin.systemd_service:
