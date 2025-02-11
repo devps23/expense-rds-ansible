@@ -1,4 +1,4 @@
 - name: connect new relic to frontend
-  ansible.builtin.shell: curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-EDEQ6RBS4RUOOE2F0UVJOE65S2A NEW_RELIC_ACCOUNT_ID=6296661 NEW_RELIC_REGION=US /usr/local/bin/newrelic install -n nginx-open-source-integration
+  ansible.builtin.shell: curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/argo.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-EDEQ6RBS4RUOOE2F0UVJOE65S2A NEW_RELIC_ACCOUNT_ID=6296661 NEW_RELIC_REGION=US /usr/local/bin/newrelic install -n nginx-open-source-integration
 
 
